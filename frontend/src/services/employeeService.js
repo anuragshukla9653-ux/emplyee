@@ -3,13 +3,13 @@ import axios from "axios";
 const API_URL = import.meta.env.VITE_API_URL || "https://emplyee-jbxe.onrender.com";
 
 export const getAllEmployees = async () => {
-  return axios.get(`${API_URL}/employees`);
+  return axios.get(`${API_URL}/api/employees`);
 };
 
 export const createEmployee = async (employeeData) => {
-  return axios.post(`${API_URL}/employees`, employeeData);
+  return axios.post(`${API_URL}/api/employees`, employeeData);
 };
 
 export const updateEmployee = async (id, employeeData) => {
-  return axios.put(`${API_URL}/employees/${id}`, employeeData);
+  return axios.put(`${API_URL}/api/employees/${id}`, employeeData);
 };
